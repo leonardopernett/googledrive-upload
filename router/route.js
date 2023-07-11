@@ -1,9 +1,13 @@
+const dotenv  = require('dotenv')
+
 
 const { Router } = require('express')
 const { google } = require('googleapis')
 const  fs = require('fs-extra')
 const  path =  require('path')
 const { verifyAuth } = require('../middleware/auth')
+
+dotenv.config()
 
 const router = Router()
 

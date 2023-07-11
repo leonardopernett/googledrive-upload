@@ -1,4 +1,5 @@
 var auth = require('basic-authorization-header');
+const dotenv  = require('dotenv')
 
 const  path =  require('path')
 
@@ -6,6 +7,9 @@ const express = require('express')
 const cors = require('cors')
 const multer = require('multer')
 const appRouter  = require('./router/route')
+
+
+dotenv.config()
 
 const app = express()
 const port = process.env.PORT || 4200;
@@ -27,6 +31,6 @@ app.use(appRouter)
 app.use(express.static(path.resolve('./public')))
 
 app.listen(port)
-console.log('Server startup on port 3000')
+console.log('Server startup on port 4200')
 
 
