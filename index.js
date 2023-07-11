@@ -8,7 +8,7 @@ const multer = require('multer')
 const appRouter  = require('./router/route')
 
 const app = express()
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4200;
 
 const storage = multer.diskStorage({
    destination:path.resolve('./public/uploads'),

@@ -6,5 +6,6 @@ COPY . .
 
 RUN npm install --quiet
 
+EXPOSE 4200
 
 CMD [ "node", "/opt/googledrive/index.js" ]
